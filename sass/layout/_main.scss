@@ -1,0 +1,9 @@
+.main {
+  background-color: var(--color-light-gray);
+
+  padding: 12rem 2rem;
+
+  @include respond(tab-port) {
+    padding: 12rem 8rem;
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Ezzat Abdelrazek</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./images/favicon.png?"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/aaedfc5af5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body class="light-theme">
+    <header class="header">
+      <h1 class="heading-primary">Where in the world?</h1>
+      <button class="btn btn--theme">
+        <i class="fa fa-regular fa-moon"></i> Dark Mode
+      </button>
+    </header>
+    <main class="main">
+      <form action="#" class="form">
+        <div class="form__group">
+          <label for="search" class="form__label form__label--search"
+            >Search For A country</label
+          >
+          <input
+            type="search"
+            name="search"
+            id="search"
+            class="form__input form__input--search"
+            placeholder="Search for a country..."
+          />
+          <i
+            class="form__icon form__icon--search fa fa-solid fa-magnifying-glass"
+          ></i>
+        </div>
+        <div class="form__group">
+          <label for="filter" class="form__label form__label--filter"
+            >Filter by Region</label
+          >
+          <div class="custom-select-box">
+            <select
+              name="filter"
+              id="filter"
+              placeholder="hi"
+              class="form__input form__input--filter custom-select"
+            >
+              <option value="" disabled selected>Filter by Region</option>
+              <option value="africa">Africa</option>
+              <option value="americas">America</option>
+              <option value="asia">Asia</option>
+              <option value="europe">Europe</option>
+              <option value="oceania">Oceania</option>
+            </select>
+            <span class="custom-arrow"></span>
+          </div>
+        </div>
+        <button type="submit" class="btn btn--submit"></button>
+      </form>
+      <section class="section-countries">
+        <p class="countries__text u-display-none">
+          Unfortunately No More <strong>Countries</strong> Exist..
+        </p>
+        <div class="spinner lds-roller u-display-none">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <button class="btn btn--load u-display-none">Load More</button>
+      </section>
+      <section class="section-details"></section>
+    </main>
+  </body>
+</html>

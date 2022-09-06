@@ -1,0 +1,23 @@
+// COLORS
+
+:root {
+  --color-blue: hsl(209, 23%, 22%);
+  --color-dark-blue--1: hsl(207, 26%, 17%);
+  --color-dark-blue--2: hsl(200, 15%, 8%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-dark-gray: hsl(0, 0%, 52%);
+  --color-light-gray: hsl(0, 0%, 98%);
+}
+
+// FONTS
+
+$font-family-primary: "Nunito", sans-serif;
+$font-size-1: 1.4rem;
+$font-size-2: 1.6rem;
+$font-weight-small: 300;
+$font-weight-medium: 600;
+$font-weight-big: 800;
+
+// SIZES
+
+$details-width: 40rem; //Mobile

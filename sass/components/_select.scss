@@ -1,0 +1,41 @@
+.custom-select-box {
+  max-width: 22.3rem;
+  min-width: 22.3rem;
+
+  position: relative;
+}
+.custom-arrow {
+  background-color: var(--color-dark-gray);
+
+  border-radius: 6px; //from form__input Element
+
+  display: block;
+
+  height: 100%;
+  width: 5rem;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  pointer-events: none;
+
+  &::before {
+    content: "";
+
+    background: none;
+
+    border: 2px solid var(--color-blue);
+    border-top: 0;
+    border-left: 0;
+
+    width: 0.8rem;
+    height: 0.8rem;
+
+    position: absolute;
+    top: 50%;
+    right: 50%;
+
+    transform: translateY(-50%) rotateZ(45deg);
+  }
+}

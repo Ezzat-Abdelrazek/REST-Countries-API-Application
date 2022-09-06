@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-size: 50%; // 1rem = 8px
+
+  @include respond(tab-port) {
+    font-size: 62.5%; //10px
+  }
+  @include respond(tab-land) {
+    font-size: 75%; //12px
+  }
+  @include respond(desktop) {
+    font-size: 87.5%; //14px
+  }
+  @include respond(desktop-big) {
+    font-size: 100%; //16px
+  }
+}
+
+body {
+  background-color: var(--color-light-gray);
+
+  color: var(--color-dark-blue--2);
+
+  font-family: $font-family-primary;
+
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+
+  text-decoration: none;
+}
+
+button {
+  background: none;
+
+  border: none;
+
+  color: inherit;
+
+  cursor: pointer;
+
+  font-family: inherit;
+}

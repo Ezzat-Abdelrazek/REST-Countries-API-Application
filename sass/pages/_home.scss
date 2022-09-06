@@ -1,0 +1,25 @@
+.section-countries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6.5rem;
+
+  position: relative;
+
+  @include respond(tab-port) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.countries__text {
+  color: var(--color-blue);
+
+  font-size: $font-size-1;
+
+  position: absolute;
+  bottom: -10rem;
+  left: 50%;
+
+  transform: translate(-50%);
+}

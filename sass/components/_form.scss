@@ -1,0 +1,81 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  padding: 2rem 0rem;
+  padding-bottom: 0;
+
+  margin-bottom: 6rem;
+
+  width: 100%;
+
+  @include respond(tab-port) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__label {
+    display: none;
+  }
+
+  &__input {
+    background-color: var(--color-dark-gray);
+
+    border: none;
+    border-radius: 6px;
+
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+
+    color: var(--color-blue);
+
+    font-family: inherit;
+    font-size: $font-size-1;
+
+    padding: 1.6rem 8rem;
+
+    width: 100%;
+    max-width: 50rem;
+
+    &::placeholder {
+      color: var(--color-blue);
+    }
+    &:focus {
+      outline: 1px solid var(--color-blue);
+    }
+
+    &--filter {
+      border: none;
+
+      color: var(--color-blue);
+
+      cursor: pointer;
+
+      font-size: $font-size-1;
+      font-weight: $font-weight-medium;
+
+      padding: 1.6rem 3rem;
+
+      width: 100%;
+    }
+  }
+
+  &__group {
+    position: relative;
+    &:first-child {
+      flex: 1;
+    }
+  }
+
+  &__icon {
+    color: var(--color-blue);
+
+    font-size: 1.6rem;
+
+    position: absolute;
+    top: 40%;
+    left: 5rem;
+
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "rest-countries-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass ./sass/main.scss  ./css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}
