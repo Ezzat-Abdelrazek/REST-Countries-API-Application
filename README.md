@@ -7,14 +7,10 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -42,16 +38,6 @@ Users should be able to:
 
 ## My process
 
-1- Taking a Look at the desgin.
-2- Deciding the HTML Structure and Elements Used for each section.
-3- Deciding CSS class names To follow BEM.
-4- Using 7-1 Architecture to divide my styles into multiple files which is easier to modify and maintain.
-5- Then decide which element styles goes into which file.
-6- Then Creating a flowchart for Application functionalites
-7- Then Creating an Architecture diagram for the different classes and methods i am going to create.
-8- Finally implementing different features of my application using vanilla javascript.
-
-//Note: Initial Flowchart and architecture diagrams are not final they may be changed dramatically during implementation, also some features may be added during        implementaion.
 
 ### Built with
 
